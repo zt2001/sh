@@ -107,6 +107,19 @@ elif [ "$value" == "5" ]; then
 	echo "********sh.wyjs.ltd*********"
 	echo ""
 	exit 0
+
+elif [ "$value" == "6" ]; then
+	name = '$USER ALL=(ALL:ALL) NOPASSWD:ALL'
+	sudo sed -i '/%sudo/a\name' sudoers
+	echo ""
+	echo "********修改docker镜像加速完毕*********"
+	echo ""
+	echo "wyjs-sh脚本已运行完毕"
+	echo ""
+	echo "***************sh.wyjs.ltd****************"
+	echo ""
+	exit 0
+
 else
 	echo ""
 	echo "**********🌩**********"
