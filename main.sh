@@ -4,7 +4,6 @@ echo ""
 echo "**********wyjs-sh**********"
 echo ''
 echo "1.编译apollo容器"
-echo "容器脚本已运行完毕"
 echo "2.进入apollo容器"
 echo "3.安装docker"
 echo "4.docker镜像加速"
@@ -13,6 +12,7 @@ echo "其他字符.退出"
 echo ''
 echo '************菜单************'
 read -p "请输入您的选择:" value
+echo ''
 if [ "$value" == "1" ]; then
 	cd
 	cd work/ApolloAuto/apollo
