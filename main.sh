@@ -105,11 +105,16 @@ elif [ "$value" == "5" ]; then
 	echo "wyjs-sh脚本已运行完毕"
 	echo ""
 	echo "********sh.wyjs.ltd*********"
-	echo ""
+	echo ""sudo sed -i '/%sudo/a\$USER ALL=(ALL:ALL) NOPASSWD:ALL' /etc/sudoers
 	exit 0
 
 elif [ "$value" == "6" ]; then
-	sudo sed -i '/%sudo/a\$USER ALL=(ALL:ALL) NOPASSWD:ALL' /etc/sudoers
+	read -p "请输入当前用户名:" name
+	if [ "$name" != "" ]; then
+		sudo sed -i '/%sudo/a\'${name}' ALL=(ALL:ALL) NOPASSWD:ALL' /etc/sudoers
+	else
+		echo "********您未输入用户名*********"
+
 	echo ""
 	echo "********修改docker镜像加速完毕*********"
 	echo ""
