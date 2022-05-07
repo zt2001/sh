@@ -117,7 +117,7 @@ elif [ "$value" == "6" ]; then
 		echo "********您未输入用户名*********"
 	fi
 	echo ""
-	echo "********修改docker镜像加速完毕*********"
+	echo "******修改sudo无需密码修改完毕*******"
 	echo ""
 	echo "wyjs-sh脚本已运行完毕"
 	echo ""
