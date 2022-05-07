@@ -1,6 +1,15 @@
 #! /bin/bash
 sudo -v
-read -p "1.编译apollo容器-2.进入apollo容器，3.安装docker，4.docker镜像加速，其他字符.退出:" value
+echo ""
+echo "**********编译完毕**********"
+echo "1.编译apollo容器"
+echo "容器脚本已运行完毕"
+echo "2.进入apollo容器"
+echo "3.安装docker"
+echo "4.docker镜像加速"
+echo "其他字符.退出"
+echo ''
+read -p "请输入您的选择:" value
 if [ "$value" == "1" ]; then
 	cd
 	cd work/ApolloAuto/apollo
