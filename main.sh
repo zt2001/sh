@@ -109,8 +109,7 @@ elif [ "$value" == "5" ]; then
 	exit 0
 
 elif [ "$value" == "6" ]; then
-	name = '$USER ALL=(ALL:ALL) NOPASSWD:ALL'
-	sudo sed -i '/%sudo/a\name' sudoers
+	sudo sed -i '/%sudo/a\$USER ALL=(ALL:ALL) NOPASSWD:ALL' /etc/sudoers
 	echo ""
 	echo "********修改docker镜像加速完毕*********"
 	echo ""
