@@ -8,6 +8,7 @@ echo "2.进入apollo容器"
 echo "3.安装docker"
 echo "4.docker镜像加速"
 echo "5.下载apollo"
+echo "6.修改sudo无需密码"
 echo "其他字符.退出"
 echo ''
 echo '************菜单************'
@@ -114,7 +115,7 @@ elif [ "$value" == "6" ]; then
 		sudo sed -i '/%sudo/a\'${name}' ALL=(ALL:ALL) NOPASSWD:ALL' /etc/sudoers
 	else
 		echo "********您未输入用户名*********"
-
+	fi
 	echo ""
 	echo "********修改docker镜像加速完毕*********"
 	echo ""
