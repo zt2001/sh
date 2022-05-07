@@ -73,6 +73,7 @@ elif [ "$value" == "4" ]; then
 	exit 0
 
 elif [ "$value" == "5" ]; then
+	cd ~
 	wget https://archive.fastgit.org/ApolloAuto/apollo/archive/refs/tags/v3.0.0.zip
 	#解压
 	unzip -o v3.0.0.zip
