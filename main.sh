@@ -20,18 +20,17 @@ if [ "$value" == "1" ]; then
 	echo ""
 	echo "**********编译完毕**********"
 	echo ""
-	echo "容器脚本已运行完毕"
+	echo "wyjs-sh脚本已运行完毕"
 	echo ""
 	echo "********sh.wyjs.ltd*********"
 	echo ""
-	pwd
 	exit 0
 
 elif [ "$value" == "2" ]; then
 	echo ""
-	echo "**********运行完毕**********"
+	echo "**********进入中**********"
 	echo ""
-	echo "容器脚本已运行完毕"
+	echo "wyjs-sh脚本已运行完毕"
 	echo ""
 	echo "********sh.wyjs.ltd*********"
 	echo ""
@@ -46,13 +45,12 @@ elif [ "$value" == "3" ]; then
 	bash docker/setup_host/setup_host.sh
 	bash docker/setup_host/install_docker.sh
 	echo ""
-	echo "**********docker完毕**********"
+	echo "**********docker安装完毕**********"
 	echo ""
-	echo "容器脚本已运行完毕"
+	echo "wyjs-sh脚本已运行完毕"
 	echo ""
 	echo "**********sh.wyjs.ltd*********"
 	echo ""
-	pwd
 	exit 0
 
 elif [ "$value" == "4" ]; then
@@ -63,13 +61,12 @@ elif [ "$value" == "4" ]; then
 	sudo systemctl daemon-reload
 	sudo systemctl restart docker
 	echo ""
-	echo "**********删除完毕**********"
+	echo "********修改docker镜像加速完毕*********"
 	echo ""
-	echo "容器脚本已运行完毕"
+	echo "wyjs-sh脚本已运行完毕"
 	echo ""
-	echo "********sh.wyjs.ltd*********"
+	echo "***************sh.wyjs.ltd****************"
 	echo ""
-	pwd
 	exit 0
 
 elif [ "$value" == "5" ]; then
@@ -103,22 +100,20 @@ elif [ "$value" == "5" ]; then
 		exit 0
 	fi
 	echo ""
-	echo "**********删除完毕**********"
+	echo "**********Apollo下载完毕**********"
 	echo ""
-	echo "容器脚本已运行完毕"
+	echo "wyjs-sh脚本已运行完毕"
 	echo ""
 	echo "********sh.wyjs.ltd*********"
 	echo ""
-	pwd
 	exit 0
 else
 	echo ""
 	echo "**********🌩**********"
 	echo ""
-	echo "容器脚本已运行完毕"
+	echo "wyjs-sh脚本已运行完毕"
 	echo ""
 	echo "******sh.wyjs.ltd******"
 	echo ""
-	pwd
 	exit 0
 fi
