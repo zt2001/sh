@@ -18,17 +18,17 @@ if [ "$value" == "Y" ] || [ "$value" == "y" ]; then
 	echo ""
 	echo "apollo下载脚本已运行完毕"
 	echo ""
-	echo "********sh.wyjs.ltd********"
+	echo "*********sh.wyjs.ltd*********"
 	echo ""
 	exit 0
 
 else
 	echo ""
-	echo "**********🌩**********"
+	echo "*************🌩*************"
 	echo ""
 	echo "apollo下载脚本已运行完毕"
 	echo ""
-	echo "******sh.wyjs.ltd******"
+	echo "*********sh.wyjs.ltd*********"
 	echo ""
 	exit 0
 fi
