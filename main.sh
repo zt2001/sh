@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/sh
 sudo -v
 read -p "1.编译apollo容器-2.进入apollo容器，3.安装docker，4.docker镜像加速，其他字符.退出:" value
 if [ "$value" == "1" ]; then
