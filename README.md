@@ -1,2 +1,2 @@
 # sh
-wyjs-sh脚本管理
+wyjs-sh -脚本管理
