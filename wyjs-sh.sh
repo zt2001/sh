@@ -4,9 +4,9 @@ if [ ! -f "wyjs-sh/main.sh" ]; then
 tee -ai ~/.bashrc <<-'EOF'
 alias wyjs='bash ~/wyjs-sh/main.sh'
 EOF
-    cd;mkdir wyjs-sh;cd wyjs-sh;rm main.sh;wget https://cdn.jsdelivr.net/gh/zt2001/sh@master/main.sh ;chmod 777 main.sh;source ~/.bashrc
+    cd;mkdir wyjs-sh;cd wyjs-sh;rm main.sh;wget https://cdn.jsdelivr.net/gh/zt2001/sh@master/main.sh ;chmod 777 main.sh;echo ""
 fi
-#echo ""
+
 #echo ''
 #echo ''
 #echo ''
