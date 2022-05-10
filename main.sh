@@ -126,7 +126,7 @@ elif [ "$value" == "6" ]; then
 	exit 0
 
 else
-	echo ""
+	echo ''$value''
 	echo "**********🌩**********"
 	echo ""
 	echo "wyjs-sh脚本已运行完毕"
